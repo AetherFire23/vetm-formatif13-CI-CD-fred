@@ -7,13 +7,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MainTest {
 
-     @Test
-     void mainTest() {
-          assertTrue(true);
-     }
+    @Test
+    void mainTest() {
+        assertTrue(true);
+    }
 
-     @Test
-     public void failTest() {
-          Assertions.assertFalse(false);
-     }
+    @Test
+    public void failTest() {
+        Assertions.assertFalse(false);
+    }
 }
