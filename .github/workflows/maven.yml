@@ -32,6 +32,9 @@ jobs:
 #      run: |
 #        curl -sL https://archive.apache.org/dist/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz | tar xz echo "$PWD/apache-maven-3.9.6/bin" >> $GITHUB_PATH
 
+    - name: Linting
+      run: mvn -B formatter:validate
+
     - name: Compiler le projet
       run: mvn -B compile --file pom.xml
 

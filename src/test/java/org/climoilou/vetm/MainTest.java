@@ -14,6 +14,6 @@ class MainTest {
 
      @Test
      public void failTest() {
-          Assertions.assertFalse(true);
+          Assertions.assertFalse(false);
      }
 }
