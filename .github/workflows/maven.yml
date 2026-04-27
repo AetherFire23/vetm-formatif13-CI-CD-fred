@@ -35,6 +35,9 @@ jobs:
     - name: Linting
       run: mvn -B formatter:validate
 
+    - name: Verify
+      run: mvn -B verify
+
     - name: Compiler le projet
       run: mvn -B compile --file pom.xml
 
